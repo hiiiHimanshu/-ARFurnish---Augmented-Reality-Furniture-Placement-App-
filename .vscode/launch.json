@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug iOS AR App",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "ios",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug Android AR App",
+      "type": "reactnative", 
+      "request": "launch",
+      "platform": "android",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

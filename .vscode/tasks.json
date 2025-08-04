@@ -1,0 +1,69 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start AR Furniture App",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"start"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		},
+		{
+			"label": "Run Android AR App",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"android"
+			],
+			"group": "build",
+			"dependsOn": "Start AR Furniture App",
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "new"
+			},
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		},
+		{
+			"label": "Run iOS AR App",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"ios"
+			],
+			"group": "build",
+			"dependsOn": "Start AR Furniture App",
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "new"
+			},
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		}
+	]
+}
